@@ -1,0 +1,14 @@
+---
+from: centos:latest
+
+os: centos
+os_version: 7
+
+image_name: autostructure/secure_tomcat
+
+puppet_agent_version: 1.8.1
+
+image_user: tomcat_admin
+
+expose: 8080
+cmd: ["/usr/local/tomcat/bin/catalina.sh", "run"]
