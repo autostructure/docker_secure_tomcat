@@ -6,6 +6,11 @@ package {'curl':
   ensure => present,
 }
 
+File {
+  backup => false,
+}
+
+
 # A wrapper that contains all thr functionality needed for a standard java web
 # application --- does not support JEE applications
 
